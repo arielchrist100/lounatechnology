@@ -1,0 +1,92 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+h1 {
+    text-align: center;
+    color: #003362;
+}
+
+/* Table des prix */
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Style pour chaque plan */
+.pricing-plan {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+}
+
+/* En-tête de chaque plan (avec l'image) */
+.plan-header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.plan-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Titre et prix */
+h2 {
+    color: #003362;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 2.5rem;
+    color: #189b35;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Liste des services inclus */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Bouton de choix */
+button {
+    background-color: #189b35;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #16a741;
+}
