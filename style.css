@@ -91,7 +91,7 @@ input[type="email"]:focus {
 }
 
 .submit-button {
-  padding: 20px; /* Plus de padding pour un meilleur affichage */
+  padding: 30px; /* Plus de padding pour un meilleur affichage */
   font-size: 1.1rem;
   color: white;
   background-color: #5c6bc0;
