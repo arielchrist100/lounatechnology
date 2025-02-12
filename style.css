@@ -59,7 +59,7 @@ header nav ul li a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   margin: auto;
-  margin-top: 50px;  /* Ajout d'une marge en haut pour ne pas que le formulaire soit collé au haut de la page */
+  margin-bottom: 100px; /* Ajoute un grand espace en bas pour éloigner du bas de la page */
 }
 
 h2 {
