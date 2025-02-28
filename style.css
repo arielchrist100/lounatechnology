@@ -27,7 +27,7 @@ header nav ul {
   margin: 0;
   padding: 0;
   position: relative;
-  }
+ }
 
 header nav ul li {
   position: relative;
@@ -126,11 +126,6 @@ input[type="email"]:focus {
 
 
 }
-
-
-
-
-
 
 
 /* Style pour les liens A PROPOS */
@@ -267,7 +262,7 @@ a[href="tarif_luna_technologie-1.html"] span {
   background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(75, 66, 66, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -618,68 +613,6 @@ button:hover, a.btn:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* css de tarif ) */
 
 
@@ -773,4 +706,48 @@ button {
 
 button:hover {
   background-color: #16a741;
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.social-icons img {
+  width: 40px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
 }
