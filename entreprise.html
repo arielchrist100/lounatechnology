@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="entreprise-1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="entreprise-1.css">
     <title>entreprise</title>
 </head>
 <body>
@@ -61,12 +61,49 @@
       <P>  ✅ Divertir avec du contenu varié : Podcasts, vidéos, interviews, articles interactifs et bien plus encore.
       <P>  ✅ Éduquer et inspirer : Rubriques spécialisées sur la technologie, l’entrepreneuriat, la finance et le développement personnel.         <P>   ✅ Créer une communauté engagée : Un espace où les utilisateurs peuvent interagir, commenter et partager leurs opinions.</p>
 
-<h2> Notre Vision : L'Expansion Vers l'Électronique </h2>
-    <P> Nous ne nous arrêtons pas aux services digitaux. 
-        Notre ambition est de devenir un acteur majeur de l'industrie technologique en Afrique, 
-        en nous étendant au secteur de l'électronique. 
-    <P> Nous prévoyons la construction d'une usine en Côte d'Ivoire pour produire des appareils électroniques et ménagers 
-        tels que des climatiseurs, des aspirateurs et d'autres produits technologiques.</P>
+
+
+
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Veuillez remplir ce formulaire pour nous envoyer vos coordonnées et message.</p>
+            <form action="envoyer_message.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required placeholder="Entrez votre nom">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="telephone">Numéro de téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" required placeholder="Entrez votre numéro de téléphone">
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Écrivez votre message ici"></textarea>
+                </div>
+    
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="social-box">
             <a href="https://wa.me/2250546149391" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
             <a href="mailto:serviceslouna30@gmail.com" class="gmail"><i class="fas fa-envelope"></i></a>
