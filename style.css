@@ -20,17 +20,13 @@ header .container {
   padding: 0 2rem;
 }
 
+/* Navigation */
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
-  position: relative;
- }
-
-header nav ul li {
-  position: relative;
 }
 
 header nav ul li a {
@@ -45,174 +41,11 @@ header nav ul li a:hover {
   color: #f1c40f;
 }
 
-
-/* bouton d'ajout mail */
-
-.email-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;  /* Augmenter le padding pour plus d'espace autour du formulaire */
-  background-color: #f4f4f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: auto;
-  margin-bottom: 200px; /* Ajoute un grand espace en bas pour éloigner du bas de la page */
-}
-
-h2 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 20px;  /* Augmenter l'espacement sous le titre */
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-input[type="email"] {
-  padding: 12px;
-  font-size: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 20px;  /* Augmenter l'espace entre le champ et le bouton */
-  width: 100%;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-}
-
-input[type="email"]:focus {
-  border-color: #5c6bc0;
-  outline: none;
-}
-
-.submit-button {
-  padding: 30px; /* Plus de padding pour un meilleur affichage */
-  font-size: 1.1rem;
-  color: white;
-  background-color: #5c6bc0;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 100%; /* Prend toute la largeur disponible */
-  max-width: 300px; /* Limite la largeur pour éviter qu'il ne soit trop large */
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-}
-
-.submit-button:hover {
-  background-color: #3f4b9a;
-  transform: scale(1.05);
-}
-
-.submit-button:active {
-  background-color: #3b4a87;
-  transform: scale(1);
-}
-
-#response-message {
-  color: #4caf50;
-  margin-top: 20px;  /* Augmenter l'espacement du message de confirmation */
-  font-size: 1rem;
-  text-align: center;
-}
-.email-form{
-
-  margin-bottom: 20px;  /* Augmenter l'espace entre le corps */
-
-
-}
-
-
-/* Style pour les liens A PROPOS */
-a[href="#aba"] {
-  text-decoration: none; /* Supprime le soulignement */
-  color: #333; /* Couleur par défaut du texte */
-  font-weight: bold; /* Texte en gras */
-  display: inline-block; /* Rend le lien en bloc pour gérer le centrage */
-  padding: 10px 20px; /* Ajoute de l'espace autour du texte */
-  text-align: center; /* Centre le texte horizontalement */
-  border: 2px solid transparent; /* Bordure par défaut invisible */
-  border-radius: 5px; /* Coins arrondis */
-  transition: all 0.3s ease; /* Animation fluide */
-  position: relative; /* Nécessaire pour les animations */
-  overflow: hidden; /* Empêche le contenu de déborder */
-}
-
-/* Effet de survol */
-a[href="#aba"]:hover {
-  color: #fff; /* Change la couleur du texte */
-  background-color: #007BFF; /* Change la couleur de fond */
-  border-color: #0056b3; /* Ajoute une bordure visible */
-}
-
-/* Effet de centrage au survol */
-a[href="#aba"]:hover::after {
-  content: ''; /* Crée un élément décoratif */
-  position: absolute; /* Position absolue pour contrôle complet */
-  top: 0; left: 0; /* Début en haut à gauche */
-  width: 100%; height: 100%; /* Couvre toute la taille du lien */
-  background-color: rgba(0, 0, 0, 0.1); /* Effet visuel doux */
-  z-index: -1; /* Place l'élément derrière le texte */
-}
-
-a[href="#aba"] span {
-  position: relative; /* Permet de manipuler le texte */
-  top: 50%; /* Place le texte au centre verticalement */
-  transform: translateY(-50%); /* Ajuste pour le centrage parfait */
-}
-/* Style pour le lien TARIF */
-a[href="tarif_luna_technologie-1.html"] {
-  text-decoration: none; /* Supprime le soulignement */
-  color: #333; /* Couleur par défaut du texte */
-  font-weight: bold; /* Texte en gras */
-  display: inline-block; /* Rend le lien en bloc pour gérer le centrage */
-  padding: 10px 20px; /* Ajoute de l'espace autour du texte */
-  text-align: center; /* Centre le texte horizontalement */
-  border: 2px solid transparent; /* Bordure par défaut invisible */
-  border-radius: 5px; /* Coins arrondis */
-  transition: all 0.3s ease; /* Animation fluide */
-  position: relative; /* Nécessaire pour les animations */
-  overflow: hidden; /* Empêche le contenu de déborder */
-}
-
-/* Effet de survol */
-a[href="tarif_luna_technologie-1.html"]:hover {
-  color: #fff; /* Change la couleur du texte */
-  background-color: #007BFF; /* Change la couleur de fond */
-  border-color: #0056b3; /* Ajoute une bordure visible */
-}
-
-/* Effet de centrage au survol */
-a[href="tarif_luna_technologie-1.html"]:hover::after {
-  content: ''; /* Crée un élément décoratif */
-  position: absolute; /* Position absolue pour contrôle complet */
-  top: 0; left: 0; /* Début en haut à gauche */
-  width: 100%; height: 100%; /* Couvre toute la taille du lien */
-  background-color: rgba(0, 0, 0, 0.1); /* Effet visuel doux */
-  z-index: -1; /* Place l'élément derrière le texte */
-}
-
-a[href="tarif_luna_technologie-1.html"] span {
-  position: relative; /* Permet de manipuler le texte */
-  top: 50%; /* Place le texte au centre verticalement */
-  transform: translateY(-50%); /* Ajuste pour le centrage parfait */
-}
-
-
-
-
-
 /* Section Hero */
 #hero {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -234,26 +67,7 @@ a[href="tarif_luna_technologie-1.html"] span {
   z-index: 1;
 }
 
-/* Bouton */
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  color: #000000;
-  background-color: #189b35a7;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #15a349;
-  transform: scale(1.05);
-}
-
 /* Section Services */
-
-
 .service {
   display: flex;
   align-items: flex-start;
@@ -290,463 +104,108 @@ a[href="tarif_luna_technologie-1.html"] span {
   color: #555;
 }
 
-/* Titres */
-h2 {
-  text-align: left;
-}
-
-.mot {
-  text-align: center;
-  color: #bb0000;
-  font-size: 24px;
-  margin: 20px 0;
-}
-
-h4 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 36px;
-  text-align: center;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(1.05);
-      color: #f39c12;
-  }
-  100% {
-      transform: scale(1);
-  }
-}
-
-/* Images */
-.image-container img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.image-container img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Section Présentation */
-.presentation {
-  font-family: 'Merriweather', serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-.presentation h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #003362;
-}
-
-.presentation .texte-elegant {
-  font-family: 'Georgia', serif;
-  font-size: 18px;
-  margin-bottom: 20px;
-  text-align: justify;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1.5s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-  0% {
-      opacity: 0;
-      transform: translateY(20px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-/* Animation Images */
-@keyframes animationImage {
-  0% {
-      transform: scale(1);
-      opacity: 0;
-  }
-  50% {
-      transform: scale(1.2);
-      opacity: 0.8;
-  }
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
-}
-
-.image {
-  animation: animationImage 4s infinite;
-}
-
-/* Style global */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-}
-
-/* Section ENTREPRISE */
-#ENTREPRISE {
-  padding: 2rem;
-  background-color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  max-width: 800px;
-  margin: 2rem auto;
-}
-
-/* Titre principal */
-.presentation h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #003366;
-  margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-/* Effet au survol des titres */
-.presentation h2:hover {
-  transform: scale(1.05);
-  color: #f39c12;
-}
-
-/* Texte élégant */
-.presentation .texte-elegant {
-  font-family: 'Georgia', serif;
-  font-size: 18px;
-  margin-bottom: 20px;
-  text-align: justify;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.presentation .texte-elegant:hover {
-  color: #555;
-  transform: translateX(10px);
-}
-
-/* Listes */
-ul {
-  margin: 0;
-  padding-left: 1.5rem;
-}
-
-ul li {
-  margin-bottom: 10px;
-  position: relative;
-  font-size: 18px;
-  transition: color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
-}
-
-/* Effet au survol des éléments de liste */
-ul li:hover {
-  color: #003366;
-  transform: translateX(10px);
-}
-
-ul li::before {
-  content: "•";
-  color: #9d1d50;
-  font-weight: bold;
-  display: inline-block;
-  width: 1rem;
-  margin-left: -1rem;
-  transition: transform 0.3s ease;
-}
-
-ul li:hover::before {
-  transform: scale(1.5);
-  color: #f39c12;
-}
-
-/* Paragraphe témoignage */
-#ENTREPRISE p {
-  font-size: 16px;
-  margin-bottom: 15px;
-  text-align: justify;
-}
-
-/* Image */
-.image3{
-  display: flex; /* Active l'alignement horizontal */
-  justify-content: center; /* Centre les images horizontalement */
-  align-items: center; /* Aligne les images verticalement */
-  gap: 20px; /* Espacement entre les images */
-  flex-wrap: wrap; /* Permet un retour à la ligne si l'écran est trop petit */
-}
-
-.image3 img {
-  width: 150px; /* Taille uniforme pour toutes les images */
-  height: auto; /* Conserve les proportions des images */
-  border-radius: 10px; /* Coins arrondis (optionnel) */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
-}
-
-.image3 img:hover {
-  transform: scale(1.1); /* Zoom sur l'image au survol */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombre élégante */
-}
-
-
-/* Citation */
-#ENTREPRISE p:last-of-type {
-  font-style: italic;
-  color: #555;
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* Effet interactif des boutons (optionnel, si vous ajoutez des liens ou des boutons) */
-button, a.btn {
-  background-color: #003366;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover, a.btn:hover {
-  background-color: #f39c12;
-  transform: scale(1.1);
-}
-
-#entreprises {
-  background-color: #f3f4f6;
-  padding: 60px 20px;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#entreprises .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#entreprises h2 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-  color: #1abc9c;
-  font-weight: bold;
-}
-
-#entreprises .intro {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  color: #34495e;
-}
-
-#entreprises h3 {
-  font-size: 2rem;
-  margin: 20px 0;
-  color: #16a085;
-  font-weight: 600;
-}
-
-#entreprises .highlights {
-  list-style-type: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-#entreprises .highlights li {
-  font-size: 1.1rem;
-  margin: 10px 0;
-  position: relative;
-  padding-left: 30px;
-}
-
-#entreprises .highlights li::before {
-  position: absolute;
-  left: 0;
-  color: #27ae60;
-  font-size: 1.5rem;
-}
-
-#entreprises .call-to-action {
-  font-size: 1.3rem;
-  margin-top: 30px;
-  font-weight: bold;
-  color: #1abc9c;
-}
-
-#entreprises .btn-invest {
-  display: inline-block;
-  background-color: #1abc9c;
-  color: white;
-  padding: 12px 30px;
-  margin-top: 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-#entreprises .btn-invest:hover {
-  background-color: #16a085;
-  color: white;
-}
-
-
-
-/* css de tarif ) */
-
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-/* Conteneur principal */
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-h1 {
-  text-align: center;
-  color: #003362;
-}
-
-/* Table des prix */
-.pricing-table {
+/* Formulaire */
+.email-container {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-/* Style pour chaque plan */
-.pricing-plan {
-  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 30%;
-  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
-/* En-tête de chaque plan (avec l'image) */
-.plan-header {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.plan-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Titre et prix */
-h2 {
-  color: #003362;
-  font-size: 1.8rem;
-  margin-top: 20px;
-}
-
-.price {
-  font-size: 2.5rem;
-  color: #189b35;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-/* Liste des services inclus */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 15px;
-  text-align: left;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-/* Bouton de choix */
-button {
-  background-color: #189b35;
-  color: #fff;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 5px;
+input[type="email"] {
+  padding: 12px;
   font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #16a741;
-}
-
-
-footer {
-  background-color: #111;
+.submit-button {
+  padding: 12px;
+  font-size: 1rem;
   color: white;
-  padding: 30px 0;
-  text-align: center;
+  background-color: #5c6bc0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.submit-button:hover {
+  background-color: #3f4b9a;
+  transform: scale(1.05);
 }
 
-.footer-section {
-  width: 30%;
-  margin-bottom: 20px;
+/* RESPONSIVE DESIGN */
+
+/* Écrans de taille moyenne (tablette) */
+@media (max-width: 1024px) {
+  header .container {
+    padding: 0 1rem;
+  }
+
+  header nav ul {
+    gap: 1.5rem;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
+/* Écrans mobiles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .email-container {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  input[type="email"] {
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .service {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .service-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-content p {
+    font-size: 1rem;
+  }
 }
-
-.footer-section ul li {
-  margin: 5px 0;
-}
-
-.social-icons img {
-  width: 40px;
-  margin: 10px;
-  transition: 0.3s;
-}
-
-.social-icons img:hover {
-  opacity: 0.7;
-}
-
-
-
-
-
