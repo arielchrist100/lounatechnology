@@ -209,3 +209,76 @@ input[type="email"] {
     font-size: 1rem;
   }
 }
+
+
+
+
+
+
+/* Styles généraux */
+.container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Titre */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Grille responsive */
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Carte de plan tarifaire */
+.pricing-plan {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing-plan:hover {
+  transform: scale(1.05);
+}
+
+/* Image du plan */
+.plan-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* En-tête du plan */
+.plan-header h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #007BFF;
+}
+
+/* Prix */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+  .pricing-table {
+      flex-direction: column;
+      align-items: center;
+  }
+}
