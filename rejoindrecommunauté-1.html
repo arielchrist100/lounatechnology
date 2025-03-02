@@ -48,12 +48,13 @@
         <h2>Rejoindre la Communauté Louna</h2>
         <p>Remplis ce formulaire et rejoins-nous sur WhatsApp !</p>
 
-        <form>
-            <input type="text" placeholder="Votre Nom" required>
-            <input type="email" placeholder="Votre Email" required>
-            <input type="tel" placeholder="Votre Numéro WhatsApp" required>
-            <button type="submit">S'inscrire</button>
+        <form action="http://localhost8080/mon-project/enregistrer.php" method="POST">
+            <input type="text" name="nom" placeholder="Votre Nom" required>
+            <input type="email" name="email" placeholder="Votre Email" required>
+            <textarea name="message" placeholder="Votre Message" required></textarea>
+            <button type="submit">Envoyer</button>
         </form>
+        
 
         <p>Ou rejoins-nous directement :</p>
         <a href="https://chat.whatsapp.com/TON-LIEN-GROUPE" target="_blank">
